@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meine erste Webseite</title>
+  </head>
+  <body>
+    <h1>Hallo Jimmy!</h1>
+    <p>Meine erste Website auf Github.</p>
+  </body>
+</html>
