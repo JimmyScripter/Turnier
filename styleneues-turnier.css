@@ -5,8 +5,6 @@
   padding: 0;
 }
 
-
-
 html {
   font-family: 'Segoe UI', Roboto, sans-serif;
   background-color: #ececec;
@@ -53,6 +51,12 @@ h1 {
   flex-direction: column; 
   justify-content: space-between; 
   width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #167fb4;
+  font-size: clamp(0.75rem, 2vw, 1rem);
+  font-weight: 300;
+  color: grey;
 }
 
 form label {
@@ -64,12 +68,7 @@ form label {
 
 form input, form select {
   width: 100%;
-  padding: 10px 12px;
-  border-radius: 6px;
-  border: 1px solid #167fb4;
-  font-size: clamp(0.75rem, 2vw, 1rem);
-  font-weight: 300;
-  color: grey;
+  
 }
 
 form select option {
