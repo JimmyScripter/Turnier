@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+  
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neues Turnier anlegen</title>
+    <link rel="stylesheet" href="styleneues-turnier.css">
+  </head>
+  
+  
+  <body>
+    <div id="wrap">
+      <h1>Neues Turnier anlegen</h1>
+
+      <form id="newTournamentForm">
+
+        <div class="bar">
+            <div class="label-input">
+                <label for="tournamentName">Turniername</label>
+                <input type="text" id="tournamentName" placeholder="Mein Turnier">
+            </div> 
+        </div>
+        <div class="bar">
+            <div class="label-input">
+                <label for="tournamentHost">Ausrichter</label>
+                <input type="text" id="tournamentHost" placeholder="Ausrichter">
+            </div>  
+        </div>
+        <div class="bar">
+            <div class="label-input">
+                <label for="location">Austragungsort</label>
+                <input type="text" id="location" placeholder="Adresse der Turnier-Halle">     
+            </div>
+        </div>
+        <div class="bar">
+            <div class="label-input">
+                <label for="tournamentDate">Datum</label>
+                <input type="date" id="tournamentDate">
+            </div>
+        </div>
+        
+        <div class="bar">
+            <div class="label-input"> 
+                <label for="openTime">Hallenöffnung</label>
+                <input type="time" id="openTime" value="08:30">
+            </div>
+            <div class="label-input">
+                <label for="AuslosungTime">Auslosung</label>
+                <input type="time" id="AuslosungTime" value="09:15">
+            </div>
+            <div class="label-input">
+                <label for="startTime">Spielbeginn</label>
+                <input type="time" id="startTime" value="09:30">   
+            </div>
+        </div>
+        
+        
+        
+        <div class="bar">
+            <div class="label-input">
+                <label for="numTeams">Anzahl Teams</label>
+                <input type="number" id="numTeams" min="2" max="320" value="12">
+            </div>
+            <div class="label-input">
+                <label for="numFields">Anzahl Felder</label>
+                <input type="number" id="numFields" min="1" max="100" value="3"> 
+            </div>
+            <div class="label-input">
+                <label for="tournamentMode">Spiel-Modus</label>
+                <select id="tournamentMode">
+                    <option value="ffa" selected>Jeder gegen jeden</option>
+                 <!--   <option value="ko">KO-System</option>  Optionales Turniersystem, müsste ergänzt werden--> 
+                    <option value="groups&finals">Gruppenphase mit Finalrunden</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="bar">
+            <div class="label-input">
+                <label for="numSets">Anzahl Sätze / Gewinnsätze</label>
+                <select id="numSets">
+                    <option value="2" selected>2 Spielsätze</option>
+                    <option value="3">2 Gewinnsätze</option>
+                    <option value="5">3 Gewinnsätze</option>
+                </select>
+            </div>
+            <div class="label-input">
+                <label for="pointsPerSet">Punkte pro Satz</label>
+                <select id="pointsPerSet">
+                    <option value="15" selected>Bis 15</option>
+                    <option value="16">Bis 16</option>
+                    <option value="17">Bis 17</option>
+                    <option value="18">Bis 18</option>
+                    <option value="25">Normale Sätze bis 25</option>
+                </select>
+            </div>
+            <div class="label-input">
+                <label for="timeouts">Auszeiten pro Satz</label>
+                <select id="timeouts">
+                    <option value="0">0</option>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="bar">
+            <button type="submit" class="btn">Turnier anlegen</button>
+        </div>      
+    </form>
+  </div>
+  <footer>
+    <p>Created by Jimmy Scripter © 2025</p>
+  </footer>
+</body>
+
+</html>
