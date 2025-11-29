@@ -4,60 +4,94 @@
   margin: 0;
   padding: 0;
 }
-html
-{
+
+
+
+html {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #ececec;
   height: 100%;
 }
 
 body {
-  font-family: 'Segoe UI', Roboto, sans-serif;
-  background-color: #ececec;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  min-height: 100vh;
 }
 
 #wrap {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-  max-width: 500px;
-  width: 90%;
-
+  margin: auto; /* nimmt den verbleibenden Platz ein */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-
-  margin-top: auto;
-  margin-bottom: auto;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  font-size: 1.8rem;
-  margin-bottom: 40px;
-  color: #303030;
-  line-height: 1.4;
+    display: flex;
+    color: #11658e;
 }
 
-.buttons {
+.bar {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-direction: row;                                
+  align-items: flex-end;/* Labels oben ausrichten */
+  gap: 10px; 
+  margin: 20px 0 0; /* margin oben 20px, unten 0,  links/rechts 0 */
+  width: 100%;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  width: 100%;
+}
+
+form label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 0 12px;
+  font-weight: 600;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #167fb4;
+  font-size: clamp(0.75rem, 2vw, 1rem);
+  font-weight: 300;
+  color: grey;
+}
+
+form select option {
+    white-space: normal;
+    border: #11658e;
+}
+
+form select {
+  cursor: pointer;
 }
 
 .btn {
   display: inline-block;
-  text-decoration: none;
-  padding: 15px 25px;
-  background: linear-gradient(90deg, #03627a, #9b9b9b);
+  width: 100%;
+  margin-top: 25px;
+  padding: 1em 2em;
+  background: linear-gradient(90deg, #167fb4, #aea7a7);
   color: white;
   font-weight: bold;
   border-radius: 8px;
+  border: none;
+  cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -66,9 +100,8 @@ h1 {
   box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
 
-
-footer
-{
+footer {
+  margin-top: 10px; 
   text-align: center;
   padding: 10px 0;
   font-size: 0.8rem;
