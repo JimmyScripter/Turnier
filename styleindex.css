@@ -1,0 +1,77 @@
+/* Reset / Basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html
+{
+  height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #ececec;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#wrap {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  color: #303030;
+  line-height: 1.4;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 25px;
+  background: linear-gradient(90deg, #03627a, #9b9b9b);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+
+footer
+{
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.8rem;
+  color: #888;
+  width: 100%;
+}
