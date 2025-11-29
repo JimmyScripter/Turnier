@@ -40,6 +40,8 @@ h1 {
 
 .bar {
   display: flex;
+  flex-wrap: wrap;
+  min-width: 0;
   flex-direction: row;                                
   align-items: flex-end;/* Labels oben ausrichten */
   gap: 10px; 
@@ -49,9 +51,22 @@ h1 {
 
 .label-input {
   display: flex;
+  flex: 1 1 120px;
   flex-direction: column; 
   justify-content: space-between; 
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;           /* max. volle Containerbreite */
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 form label {
