@@ -70,11 +70,6 @@ form input, form select {
   padding: 10px 12px;
 }
 
-form select option {
-    white-space: normal;
-    border: #11658e;
-}
-
 form select {
   cursor: pointer;
 }
