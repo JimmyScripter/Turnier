@@ -95,6 +95,7 @@ form select {
 .btn {
   display: inline-block;
   text-decoration: none;
+  justify-content: center;
   width: 100%;
   margin-top: 25px;
   padding: 1em 2em;
